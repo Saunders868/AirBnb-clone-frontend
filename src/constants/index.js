@@ -1,0 +1,12 @@
+export const BASE_URI = import.meta.env.VITE_BASE_URI;
+export const PROFILE_URL = import.meta.env.VITE_USER_URL + "/profile";
+export const SESSION_URL = import.meta.env.VITE_SESSION_URL;
+export const USER_URL = import.meta.env.VITE_USER_URL;
+export const LOGOUT_URL = import.meta.env.VITE_LOGOUT_URL;
+export const IMAGE_LINK_URL = import.meta.env.VITE_IMAGE_LINK_URL;
+export const IMAGE_UPLOAD_URL = import.meta.env.VITE_IMAGE_UPLOAD_URL;
+export const CREATE_PLACE_URL = import.meta.env.VITE_CREATE_PLACE_URL;
+export const GET_PLACES_URL = import.meta.env.VITE_GET_PLACES_URL;
+export const PLACES_URL = import.meta.env.VITE_PLACES_URL;
+export const BOOKINGS_URL = import.meta.env.VITE_BOOKINGS_URL;
+export const USER_IMAGE_UPLOAD_URL = import.meta.env.VITE_USER_IMAGE_UPLOAD_URL;
