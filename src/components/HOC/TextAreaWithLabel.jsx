@@ -1,5 +1,5 @@
 import { preInput } from "../../utils/utils";
-import TextAreaInput from "../TextareaInput";
+import TextAreaInput from "../TextAreaInput";
 
 export default function TextAreaInputWithLabel({
   label,
