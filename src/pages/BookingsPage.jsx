@@ -13,12 +13,12 @@ const BookingsPage = ({ response, loading, error }) => {
         response.map((booking) => (
           <div
             key={booking._id}
-            className="flex gap-4 bg-gray-200 rounded-2xl my-4 overflow-hidden"
+            className="md:flex gap-4 bg-gray-200 rounded-2xl my-4 overflow-hidden"
           >
-            <div className="w-48">
-              <PlaceImg place={booking.place} />
+            <div className="md:w-48">
+              <PlaceImg className={'w-full object-cover aspect-square'} place={booking.place} />
             </div>
-            <div className="py-3 grow pr-4">
+            <div className="p-4 grow pr-4">
               <h2 className="text-xl">{booking.place.title}</h2>
               <div className="border-t border-gray-600 mt-2 py-2 ">
                 <div className="flex gap-2">

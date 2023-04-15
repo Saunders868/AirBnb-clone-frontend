@@ -51,7 +51,7 @@ const LoginPage = () => {
           setError(response.data.msg);
 
           toast.error(error, {
-            position: "top-right",
+            position: "bottom-right",
             autoClose: 5000,
             hideProgressBar: false,
             closeOnClick: true,
@@ -64,7 +64,7 @@ const LoginPage = () => {
 
         case 200:
           toast.success("Logged in successfully...!", {
-            position: "top-right",
+            position: "bottom-right",
             autoClose: 5000,
             hideProgressBar: false,
             closeOnClick: true,
@@ -125,7 +125,9 @@ const LoginPage = () => {
         </div>
       ) : null}
 
-      <button type="submit" className="primary">Login</button>
+      <button type="submit" className="primary">
+        Login
+      </button>
       <div className="text-center py-2 text-gray-500">
         Don't have an account?{" "}
         <Link className="underline text-black" to={"/register"}>

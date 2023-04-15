@@ -92,7 +92,7 @@ const BookingPage = () => {
       {booking ? (
         <div className="my-8">
           <h1 className="text-3xl">{booking.place.title}</h1>
-          <div className="bg-gray-200 p-6 my-6 flex rounded-2xl justify-between items-center">
+          <div className="bg-gray-200 p-6 my-6 md:flex rounded-2xl justify-between items-center">
             <div>
               <h2 className="text-2xl">Your booking information:</h2>
               <BookingDates booking={booking} />

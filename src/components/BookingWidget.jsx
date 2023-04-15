@@ -25,7 +25,7 @@ const BookingWidget = ({ place }) => {
       checkIn: formatedDate,
       checkOut: formatedFollowingDay,
       maxGuests: 1,
-      name: user.name || "",
+      name: user ? user.name : "",
       mobile: "",
     },
     validationSchema: bookingValidationSchema,
@@ -92,8 +92,8 @@ const BookingWidget = ({ place }) => {
         Price: ${place.price} / per night
       </div>
       <div className="border rounded-2xl mt-4">
-        <div className="flex">
-          <div className="py-3 px-4 grow">
+        <div className="md:flex">
+          <div className="py-3 px-4 grow border-b text-center md:text-left">
             <label htmlFor="checkIn">Check In: </label>
             <input
               type="date"
@@ -102,7 +102,7 @@ const BookingWidget = ({ place }) => {
               id="checkIn"
             />
           </div>
-          <div className="py-3 px-4 grow border-l">
+          <div className="py-3 px-4 grow text-center md:border-l md:text-left">
             <label htmlFor="checkOut">Check Out: </label>
             <input
               type="date"

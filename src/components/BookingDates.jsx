@@ -4,11 +4,11 @@ import React from "react";
 const BookingDates = ({ booking }) => {
   return (
     <>
-      <div>
+      <div className="mb-2">
         <b>FROM</b> {format(new Date(booking.checkIn), "yyyy-MM-dd")}{" "}
         <b>UNTIL</b> {format(new Date(booking.checkOut), "yyyy-MM-dd")}
       </div>
-      <div className="flex gap-4">
+      <div className="md:flex border-t border-black py-4 gap-4">
         <div className="flex gap-1 items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -30,7 +30,6 @@ const BookingDates = ({ booking }) => {
           )}{" "}
           night(s)
         </div>{" "}
-        |
         <div className="flex gap-1 items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"

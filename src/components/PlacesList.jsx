@@ -18,7 +18,7 @@ const PlacesList = ({ response, loading, error }) => {
                 response.map((place) => (
                   <Link
                     to={`/account/places/edit/${place._id}`}
-                    className="cursor-pointer mt-8 bg-gray-100 gap-4 flex p-4 rounded-2xl"
+                    className="cursor-pointer mt-8 bg-gray-100 gap-4 flex-col md:flex-row flex p-4 rounded-2xl"
                     key={place._id}
                   >
                     {place.photos.length > 0 && (

@@ -10,7 +10,7 @@ const CheckInOut = ({ getFieldProps, touched, errors }) => {
         description:
           "add check in and out times, remember to have some time window for cleaning the room between guests",
       })}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-2" id="checkInOut">
+      <div className="md:grid grid-cols-2 md:grid-cols-4 gap-2" id="checkInOut">
         <div>
           <label htmlFor="checkIn" className="mt-2 mb-1">
             Check in time

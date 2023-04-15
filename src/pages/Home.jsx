@@ -9,9 +9,9 @@ const Home = ({ response, loading, error }) => {
   ) : (
     <>
       {response.length > 0 ? (
-        <div className="grid gap-x-6 gap-y-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-8">
+        <div className="md:grid gap-x-6 gap-y-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-8">
           {response.map((place) => (
-            <Link to={'/place/'+place._id} key={place._id}>
+            <Link to={'/place/'+place._id} className="block mb-16 md:mb-0" key={place._id}>
               <div className="bg-gray-500 mb-2 rounded-2xl">
                 {place.photos?.[0] && (
                   <img

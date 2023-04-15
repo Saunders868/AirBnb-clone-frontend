@@ -139,7 +139,6 @@ const Form = ({ setLoading, response, loading }) => {
     },
   });
 
-  // console.log(values);
   return loading ? (
     <Spinner />
   ) : (
